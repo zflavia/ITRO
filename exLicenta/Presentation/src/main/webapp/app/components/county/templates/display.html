@@ -1,0 +1,38 @@
+<h2>{{message}}</h2>
+<div class="tab-content">
+
+    <a ui-sref="^.insert">
+        <button class="btn btn-primary">
+            Insert County
+        </button>
+    </a>
+    <div id="show-users" class="tab-pane fade in active">
+         <div class="row">
+            <div class="col-md-3">
+                <h3>Show Countys</h3>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control filter-input" ng-model="judetFilter" placeholder="county...">
+            </div>
+        </div>
+        <table class="table table-r">
+            <th>County Name</th>
+            <th>Country Name</th>
+            <th>Actions</th>
+            <tr ng-repeat="county in countys">
+                <td>{{county.nume}}</td>
+                 <td>{{county.tara.nume}}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary"
+                            ng-click="editCounty(county.id, $index)">
+                        <i class="glyphicon glyphicon-edit"> </i> Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger"
+                            ng-click="deleteCounty(county.id, $index)">
+                        <i class="glyphicon glyphicon-remove"> </i> Delete
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

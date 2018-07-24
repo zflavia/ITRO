@@ -1,0 +1,493 @@
+<h3>More details</h3>
+<div class="more-details-page row">
+    <div class="col-md-11">
+        <div flex="5">
+            <button class="btn btn-lg btn-default " aria-label="Go Back " ng-click="goBack()">
+                <i class="fa fa-arrow-circle-left filter-goButton"> Back</i>
+            </button>
+        </div>
+        <div class="traduceri row" ng-if="traducator.traduceriManuscrise.length ||  traduceri.traduceriFaraIndicatii.length ||  traducator.editiiVechi.length || traducator.editiiModerne || traducator.manuale.length || traducator.dictionare.length ">
+            <label class="col-md-2 col-form-label" style="margin-top: 10px;">Translators List</label>
+            <div class="col-md-10">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#listaTraduceriModal" ng-click="newListaTraduceri()"><i class="glyphicon glyphicon-plus"></i> Insert</button>
+                <div class="traduceri-manuscrise" ng-if="traducator.traduceriManuscrise.length">
+                    <h4>Manuscript Translations</h4>
+                    <table class="table table-r">
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Details</th>
+                        <th>Actions</th>
+                        <tr ng-repeat="entry in traducator.traduceriManuscrise">
+                            <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last ? ', ' : ''}}</span></td>
+                            <td>{{entry.titlu}}</td>
+                            <td>{{entry.an}}</td>
+                            <td>{{entry.detalii}}</td>
+                            <td><a  target="_blank" href="{{entry.url}}">{{entry.url}}</a></td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#listaTraduceriModal"
+                                        ng-click="editTraducereEntry(entry.id, $index,'tradManuscript')">
+                                    <i class="glyphicon glyphicon-edit"> </i> Edit
+                                </button>
+                                <button class="btn btn-sm btn-danger"
+                                        ng-click="deleteTraducereEntry(entry.id, $index,'tradManuscript')">
+                                    <i class="glyphicon glyphicon-remove"> </i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="editii-vechii" ng-if="traducator.editiiVechi.length">
+                    <h4>Old Editions</h4>
+                    <table class="table table-r">
+                        <tr>
+                            <th>Author</th>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Details</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr ng-repeat="entry in traducator.editiiVechi">
+                            <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last ? ', ' : ''}}</span></td>
+                            <td>{{entry.titlu}}</td>
+                            <td>{{entry.an}}</td>
+                            <td><span ng-bind-html="renderHtml(entry.detalii)"></span></td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#listaTraduceriModal"
+                                        ng-click="editTraducereEntry(entry.id, $index,'edVeche')">
+                                    <i class="glyphicon glyphicon-edit"> </i> Edit
+                                </button>
+                                <button class="btn btn-sm btn-danger"
+                                        ng-click="deleteTraducereEntry(entry.id, $index,'edVeche')">
+                                    <i class="glyphicon glyphicon-remove"> </i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="traducerii-fara-indicatii-bibliografice" ng-if="traducator.traduceriFaraIndicatii.length">
+                    <h4>Translation without bibliographic indications</h4>
+                    <table class="table table-r">
+                        <tr>
+                            <th>Author</th>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Details</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr ng-repeat="entry in traducator.traduceriFaraIndicatii">
+                            <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last ? ', ' : ''}}</span></td>
+                            <td>{{entry.titlu}}</td>
+                            <td>{{entry.an}}</td>
+                            <td><span ng-bind-html="renderHtml(entry.detalii)"></span></td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#listaTraduceriModal"
+                                        ng-click="editTraducereEntry(entry.id, $index,'tradFaraIndicatii')">
+                                    <i class="glyphicon glyphicon-edit"> </i> Edit
+                                </button>
+                                <button class="btn btn-sm btn-danger"
+                                        ng-click="deleteTraducereEntry(entry.id, $index,'tradFaraIndicatii')">
+                                    <i class="glyphicon glyphicon-remove"> </i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+             <div class="editii-moderne" ng-if="traducator.editiiModerne.length">
+                 <h4>Modern Editions</h4>
+                 <table class="table table-r">
+                     <tr>
+                         <th>Author</th>
+                         <th>Title</th>
+                         <th>Year</th>
+                         <th>Details</th>
+                         <th>Actions</th>
+                     </tr>
+                     <tr ng-repeat="entry in traducator.editiiModerne.length">
+                         <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last ? ', ' : ''}}</span></td>
+                         <td>{{entry.titlu}}</td>
+                         <td>{{entry.an}}</td>
+                         <td><span ng-bind-html="renderHtml(entry.detalii)"></span></td>
+                         <td>
+                             <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#listaTraduceriModal"
+                                     ng-click="editTraducereEntry(entry.id, $index,'tradModerna')">
+                                 <i class="glyphicon glyphicon-edit"> </i> Edit
+                             </button>
+                             <button class="btn btn-sm btn-danger"
+                                     ng-click="deleteTraducereEntry(entry.id, $index,'tradModerna')">
+                                 <i class="glyphicon glyphicon-remove"> </i> Delete
+                             </button>
+                         </td>
+                     </tr>
+                 </table>
+             </div>
+
+              <div class="dictionare" ng-if="traducator.dictionare.length">
+                  <h4>Dictionaries</h4>
+                  <table class="table table-r">
+                      <tr>
+                          <th>Author</th>
+                          <th>Title</th>
+                          <th>Year</th>
+                          <th>Details</th>
+                          <th>Actions</th>
+                      </tr>
+                      <tr ng-repeat="entry in traducator.dictionare">
+                          <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last ? ', ' : ''}}</span></td>
+                          <td>{{entry.titlu}}</td>
+                          <td>{{entry.an}}</td>
+                          <td><span ng-bind-html="renderHtml(entry.detalii)"></span></td>
+                          <td>
+                              <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#listaTraduceriModal"
+                                      ng-click="editTraducereEntry(entry.id, $index,'dictionar')">
+                                  <i class="glyphicon glyphicon-edit"> </i> Edit
+                              </button>
+                              <button class="btn btn-sm btn-danger"
+                                      ng-click="deleteTraducereEntry(entry.id, $index,'dictionar')">
+                                  <i class="glyphicon glyphicon-remove"> </i> Delete
+                              </button>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+
+             <div class="manuale" ng-if="traducator.manuale.length">
+                 <h4>Manual</h4>
+                 <table class="table table-r">
+                     <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Details</th>
+                        <th>Actions</th>
+                    </tr>
+                     <tr ng-repeat="entry in traducator.manuale">
+                         <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last ? ', ' : ''}}</span></td>
+                         <td>{{entry.titlu}}</td>
+                         <td>{{entry.an}}</td>
+                         <td><span ng-bind-html="renderHtml(entry.detalii)"></span></td>
+                         <td>
+                             <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#listaTraduceriModal"
+                                     ng-click="editTraducereEntry(entry.id, $index,'manual')">
+                                 <i class="glyphicon glyphicon-edit"> </i> Edit
+                             </button>
+                             <button class="btn btn-sm btn-danger"
+                                     ng-click="deleteTraducereEntry(entry.id, $index,'manual')">
+                                 <i class="glyphicon glyphicon-remove"> </i> Delete
+                             </button>
+                         </td>
+                     </tr>
+                 </table>
+             </div>
+
+            </div>
+        </div>
+        <div class="bibliografii row"   ng-if="traducator.bibliografieBPAT.length || traducator.bibliografie.length">
+            <label class="col-md-2 col-form-label">Bibliographys</label>
+            <div class="col-md-10">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bibliografieModal" ng-click="newBibliographyEntry()">
+                			<i class="glyphicon glyphicon-plus"></i> Insert</button>
+                <br>
+                <div class="general" ng-if="traducator.bibliografie.length">
+                    <h4>Bibliography</h4>
+                    <table class="table table-r">
+                       <tr>
+                           <th>Author</th>
+                           <th>Title</th>
+                           <th>Year</th>
+                           <th>Details</th>
+                           <th>Link</th>
+                           <th>Actions</th>
+                       </tr>
+                        <tr ng-repeat="entry in traducator.bibliografie">
+                            <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last?', ':''}}</span></td>
+                            <td>{{entry.titlu}}</td>
+                            <td>{{entry.an}}</td>
+                            <td><span ng-bind-html="renderHtml(entry.detalii)"></span></td>
+                            <td><a  target="_blank" href="{{entry.url}}">{{entry.url}}</a></td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#bibliografieModal"
+                                        ng-click="editBibliographyEntry(entry.id, $index, 'B')">
+                                    <i class="glyphicon glyphicon-edit"> </i> Edit
+                                </button>
+                                <button class="btn btn-sm btn-danger"
+                                        ng-click="deleteBibliographyEntry(entry.id, $index, 'B')">
+                                    <i class="glyphicon glyphicon-remove"> </i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+               <div class="bibliografie-bpat" ng-if="traducator.bibliografieBPAT.length">
+                   <h4>Bibliography on translation activity</h4>
+                   <table class="table table-r">
+                       <tr>
+                           <th>Author</th>
+                           <th>Title</th>
+                           <th>Year</th>
+                           <th>Details</th>
+                           <th>Link</th>
+                           <th>Actions</th>
+                       </tr>
+                       <tr ng-repeat="entry in traducator.bibliografieBPAT">
+                           <td><span ng-repeat="autor in entry.autori">{{autor.titlu}} {{autor.detalii}} {{autor.prenume}} {{autor.nume}}{{!$last?', ':''}}</span></td>
+                           <td>{{entry.titlu}}</td>
+                           <td>{{entry.an}}</td>
+                           <td><span ng-bind-html="renderHtml(entry.detalii)"></span></td>
+                           <td><a target="_blank" href="{{entry.url}}">{{entry.url}}</a></td>
+                           <td>
+                               <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#bibliografieModal"
+                                       ng-click="editBibliographyEntry(entry.id, $index, 'BPAT')">
+                                   <i class="glyphicon glyphicon-edit"> </i> Edit
+                               </button>
+                               <button class="btn btn-sm btn-danger"
+                                       ng-click="deleteBibliographyEntry(entry.id, $index, 'BPAT')">
+                                   <i class="glyphicon glyphicon-remove"> </i> Delete
+                               </button>
+                           </td>
+                       </tr>
+                   </table>
+               </div>
+
+            </div>
+        </div>
+		
+        <div class="prezente-bdd row" ng-if="traducator.vizibilitateBDD.length">
+            <label class="col-md-2 col-form-label">Present BDD</label>
+            <br>
+            <div class="col-md-10">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#prezenteBDDModal" ng-click="newPrezenteDBB()">
+                    <i class="glyphicon glyphicon-plus"></i>Insert</button>
+                <br>
+                <table class="table table-r">
+                    <tr>
+                        <th>Description</th>
+                        <th>Link</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr ng-repeat="entry in traducator.vizibilitateBDD">
+                        <td><div ng-bind-html="renderHtml(entry.detalii)"></div></td>
+                        <td><a  target="_blank" href="{{entry.url}}">{{entry.url}}</a></td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#prezenteBDDModal"
+                            		ng-click = "editPrezenteBDDEntry(entry.id, $index)" >
+                                <i class="glyphicon glyphicon-edit"> </i> Edit
+                            </button>
+                            <button class="btn btn-sm btn-danger"
+                                    ng-click="deletePrezenteBDDEntry(entry.id, $index)">
+                                <i class="glyphicon glyphicon-remove"> </i> Delete
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="listaTraduceriModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Translation List</h4>
+                </div>
+                <form ng-submit="submitListaTraduceri()">
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Author</label>
+                        <div class="col-md-5">
+                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#autorModal"
+                            ng-click="editAuthorEntry()"><i class="glyphicon glyphicon-plus"></i> Insert</button>
+                            <span class="author" ng-repeat="author in listaTraduceriEdit.autori">
+                                {{author.prenume}} {{author.nume}}  <button class="btn btn-sm btn-danger" ng-click="removeAuthor($index)">
+                                <i class="glyphicon glyphicon-remove"> </i> </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Title</label>
+                        <div class="col-md-5">
+                            <input class="form-control" type="text" ng-model="listaTraduceriEdit.titlu">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Year</label>
+                        <div class="col-md-3">
+                            <input class="form-control" type="text" list="years" ng-model="listaTraduceriEdit.an">
+                            <datalist id="years">
+                                <option value="{{year}}" ng-repeat="year in years">{{year}}</option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Details</label>
+                        <div class="col-md-9">
+                            <trix-editor class="form-control" angular-trix  ng-model="listaTraduceriEdit.detalii"></trix-editor>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Type</label>
+                        <div class="col-md-5">
+
+                            <select class="form-control" ng-model="listaTradEditTip">
+                                <option value="tradManuscript">Manuscript Translations</option>
+                                <option value="edVeche">Old Editions</option>
+                                <option value="tradFaraIndicatii">Translations without indications</option>
+                                <option value="tradModerna">Modern Editions</option>
+                                <option value="manual">Manual</option>
+                                <option value="dictionar">Dictionaries</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">Save</button>
+                </div>
+                </form>
+            </div>
+        </div> <!-- Was missing before -->
+    </div> <!-- Was missing before -->
+        <div id="bibliografieModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Bibliography</h4>
+                </div>
+                <form ng-submit="submitBibliographyModal()">
+                <div class="modal-body">
+                	   <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Author</label>
+                        <div class="col-md-8">
+                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#autorModal"
+                            ng-click="editAuthorEntry()"><i class="glyphicon glyphicon-plus"></i>Add</button>
+                            
+                            <br>
+                            <span class="author" ng-repeat="author in bibliografieEdit.autori">
+                                {{author.prenume}} {{author.nume}}  <button class="btn btn-sm btn-danger" ng-click="removeAuthor($index)">
+                                <i class="glyphicon glyphicon-remove"> </i> </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Title</label>
+                        <div class="col-md-5">
+                            <input class="form-control" type="text" ng-model="bibliografieEdit.titlu">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Year</label>
+                        <div class="col-md-3">
+                            <input class="form-control" type="text" list="years" ng-model="bibliografieEdit.an">
+                            <datalist id="years">
+                                <option value="{{year}}" ng-repeat="year in years">{{year}}</option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Details</label>
+                        <div class="col-md-8">
+                            <trix-editor class="form-control" angular-trix ng-model="bibliografieEdit.detalii"></trix-editor>
+                        </div>
+                    </div>
+                     <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Link</label>
+                        <div class="col-md-5">
+                            <input class="form-control" type="text" ng-model="bibliografieEdit.url">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Type</label>
+                        <div class="col-md-9">
+                            <select class="form-control" ng-model="bibliografieEditTip">
+                                <option value="bibliografie">Bibliography</option>
+                                <option value="bibliografieBPAT">Bibliography BPAT</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-default">Save</button>
+                </div>
+                </form>
+            </div>
+        </div> <!-- Was missing before -->
+    </div> <!-- Was missing before -->
+    
+    <div id="autorModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Author</h4>
+                </div>
+                <form ng-submit="submitAutorModal()">
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Search</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" ng-model="searchFilter"></input>
+                            <div class="authors">
+                                <div class="author" ng-repeat="author in authors | filter: searchFilter">
+                                    <input type="checkbox"  checklist-model="bibliografieEdit.autori" checklist-value="author" checklist-comparator=".id"> 
+                                    	{{author.prenume}} {{author.nume}}</input>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="cancelAutorModal()">Close</button>
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">Save</button>
+                </div>
+                </form>
+            </div>
+        </div> <!-- Was missing before -->
+    </div> <!-- Was missing before -->
+    
+    
+    <div id="prezenteBDDModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Present BDD</h4>
+                </div>
+                <form name="bddForm" ng-submit="submitPrezenteBDDModal()">
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Link</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control"
+                                   ng-model="prezenteBDDEdit.url" required ng-pattern = "urlPattern" name="inputBDD">
+                            <div ng-show="bddForm.inputBDD.$error.pattern && bddForm.inputBDD.$touched">
+                                Invalid URL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Details</label>
+                        <div class="col-md-8">
+                            <trix-editor class="form-control" angular-trix ng-model="prezenteBDDEdit.detalii"></trix-editor>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                    <button type="submit" class="btn btn-default" ng-disabled="bddForm.inputBDD.$error.pattern">Save</button>
+                </div>
+                </form>
+            </div>
+        </div> <!-- Was missing before -->
+    </div> <!-- Was missing before -->
+</div>

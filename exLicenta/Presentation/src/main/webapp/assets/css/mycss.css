@@ -1,0 +1,89 @@
+a.navbar-brand {
+
+    font-family: 'Orbitron';
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 30px;
+    color: #2980b9 !important;
+    /*background: url('../img/logo-hitro.png');*/
+    /*-webkit-background-size: 100% 100%;*/
+    /*background-size: 100% 100%;*/
+    /*width: 200px;*/
+    /*height: 90px;*/
+    /*margin-top: 0;*/
+}
+.navbar-right li.dropdown
+{
+    margin-top: 8px;
+}
+#user-tabs li {
+    cursor: pointer;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.form-group ol {
+    padding-left: 0;
+}
+.lista-ordonata {
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+.lista-ordonata textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.padding-btn{
+    padding-left: 15px;
+}
+ol li.lista-ordonata textarea div {
+    padding :20px 0;
+}
+trix-toolbar .button_group button, trix-toolbar .button_group input[type=button] {
+    width: 30px;
+}
+trix-editor {
+    width: 100% !important;
+    height: 130px !important;
+    overflow: auto !important;
+}
+#listaTraduceriModal .btn-sm {
+    padding: 3px;
+}
+#listaTraduceriModal .col-md-3,
+#bibliografieModal .col-md-3,
+#prezenteBDDModal .col-md-3
+{
+    text-align: right;
+}
+
+.filter-input
+{
+    margin-top: 15px;
+}
+.filter-localitate
+{
+    margin-top: 15px;
+}
+.filter-goButton
+{
+    color: #2980b9;
+}

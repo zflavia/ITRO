@@ -1,0 +1,68 @@
+task printProps << {
+	println "database.url:  $config.database.url"
+	println "database.url:  $config.database.driver"
+	println "database.username: $config.database.username"
+	println "database.password:   $config.database.password"
+}
+
+
+def db = [
+    driver: "$config.database.driver",
+    url: "$config.database.url?allowMultiQueries=true",
+    user: "$config.database.username",
+    password: "$config.database.password"
+] as Properties
+
+configurations {
+    sql
+	persistenceJar
+	provided
+	compile.extendsFrom provided
+}    
+
+dependencies {
+	sql  'mysql:mysql-connector-java:5.1.6'
+	
+	provided 'org.hibernate:hibernate-entitymanager:5.1.0.Final'
+	provided 'org.hibernate:hibernate-core:5.1.0.Final'
+	provided 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+	provided 'mysql:mysql-connector-java:5.1.6'
+
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+	compile  'com.google.guava:guava:18.0'
+	compile 'org.json:json:20160212'
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+	compile group: 'org.hibernate', name: 'hibernate-validator', version: '5.2.4.Final'
+	compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+	
+}
+ 
+
+task buildPersistenceJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Persistence',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'ro.uvt.fmi.TestHibernate'
+    }
+    baseName = project.name + '-all'
+    dependsOn configurations.runtime
+    from { (configurations.runtime -configurations.provided).collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+artifacts {
+    persistenceJar  buildPersistenceJar
+}
+
+task createDB { configurations.sql.each { file ->
+          println "Adding URL: $file"
+          gradle.class.classLoader.addURL(file.toURI().toURL())
+        }
+     
+		doLast{
+     		println "...............sql create"
+			def sql = groovy.sql.Sql.newInstance(db)
+	        sql.execute(new File("$projectDir/src/main/resources/sql/dropCreateTable.sql").text)
+	        sql.close()    
+    }
+}

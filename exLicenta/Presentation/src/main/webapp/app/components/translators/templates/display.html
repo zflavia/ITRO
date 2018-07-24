@@ -1,0 +1,43 @@
+<h2>{{message}}</h2>
+<div class="tab-content">
+    <div class = "row">
+    <div class="traducatori col-md-3">
+    <a ui-sref="^.insert">
+        <button class="btn btn-primary">
+            Insert Translator
+        </button>
+    </a>
+    </div>
+    </div>
+    <div id="show-users" class="tab-pane fade in active">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Show Translators</h3>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control filter-input" ng-model="traducatorFilter" placeholder="translator..">
+            </div>
+        </div>
+        <table class="table table-r">
+            <th>Translator Name</th>
+            <th>Actions</th>
+            <tr ng-repeat="translator in translators| filter: traducatorFilter | orderBy: 'nume'">
+                <td>{{translator.nume}} {{translator.prenume}}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary"
+                            ng-click="moreDetails(translator.id, $index)">
+                        More details
+                    </button>
+                    <button class="btn btn-sm btn-primary"
+                            ng-click="editTranslator(translator.id, $index)">
+                        <i class="glyphicon glyphicon-edit"> </i> Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger"
+                            ng-click="deleteTranslator(translator.id, $index)">
+                        <i class="glyphicon glyphicon-remove"> </i> Delete
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

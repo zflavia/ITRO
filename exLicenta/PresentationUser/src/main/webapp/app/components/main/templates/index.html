@@ -1,0 +1,59 @@
+
+
+<div class="row">
+    <div class="traducatori col-9">
+    <div class="col-md-6">
+        <div class="grup-traducator">
+             <div class="traducator" ng-repeat="traducator in traducatori | filterL: traducatorLetter | filter: traducatorFilter | orderBy: 'nume'">
+                <a ui-sref="^.traducator({id: traducator.id})">{{traducator.nume}} {{traducator.prenume}} ({{traducator.pseudonime.toString()}})</a>
+            </div>
+        </div>
+
+    </div>
+     <div class="col-md-3">
+       <div class="form-group row">
+           <div>
+               <input type="text" class="form-control" ng-model="traducatorFilter" placeholder="traducator..">
+           </div>
+       
+       </div>
+  	  
+        <div class="panel panel-primary">
+            <div class="panel-heading center">
+                Litere
+            </div>
+            <div class="panel-body">
+                <div class="letters">
+                    
+                        <span ng-repeat="letter in letters" style=" width: auto;float: left;">
+                            <h5><a ng-click="filterByLetter(letter)">{{letter}}</a>&nbsp;</h5>
+                        </span>
+                    
+                </div>
+            </div>
+       		</div>
+        </div>
+      </div>
+ 	
+   
+</div>
+
+
+
+<!-- 
+
+
+<div class="grup-traducator" ng-repeat="letter in letters">
+            <h3>{{letter}}</h3>
+
+            
+<table class="table table-r">
+
+
+<tr ng-repeat="traducator in traducatori | letterFilter: letter">
+	<td><a ui-sref="^.traducator({id: traducator.id})">{{traducator.nume}} {{traducator.prenume}}</a> &nbsp;</td>
+</tr>
+</table>
+
+</div>
+ -->

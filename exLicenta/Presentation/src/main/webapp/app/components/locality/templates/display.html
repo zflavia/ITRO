@@ -1,0 +1,37 @@
+<h2>{{message}}</h2>
+<div class="tab-content">
+   
+        <a ui-sref="^.insert">
+            <button class="btn btn-primary filter-localitate">
+                     Insert Locality
+            </button>
+        </a>
+    
+    <div id="show-users" class="tab-pane fade in active">
+        <div class="row">
+            <div class="col-md-3">
+                 <h3>Show Localitys</h3>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control filter-input" ng-model="localitateFilter" placeholder="localitys...">
+            </div>
+        </div>
+        <table class="table table-r">
+            <th>Locality Name</th>
+            <th>Actions</th>
+            <tr ng-repeat="locality in localitys |  filter: localitateFilter | orderBy: 'tara'">
+                <td>{{locality.nume}}, {{getTara(locality.judet, locality.tara)}}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary"
+                            ng-click="editLocality(locality.id, $index)">
+                        <i class="glyphicon glyphicon-edit"> </i> Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger"
+                            ng-click="deleteLocality(locality.id, $index)">
+                        <i class="glyphicon glyphicon-remove"> </i> Delete
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

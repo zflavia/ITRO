@@ -1,0 +1,54 @@
+<h3>Edit Locality</h3>
+<div flex="5">
+    <button class="btn btn-md btn-default " aria-label="Go Back " ng-click="goBack()">
+        <i class="fa fa-arrow-circle-left filter-goButton"> Back</i>
+    </button>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-8">
+        <form ng-submit="submit()">
+        
+        <div ng-if="error.message.length" class="alert alert-danger" role="alert">
+            {{error.message}}
+        </div>
+        
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label">Locality Name</label>
+                <div class="col-md-9">
+                    <input class="form-control" type="text" ng-model="locality.nume">
+                    <br>
+                </div>
+                <br>	
+				<label class="col-md-3 col-form-label">Country Name</label>
+				<div class="col-md-9 selectContainer">
+					<select class="form-control" name="tara" ng-model="locality.tara" 
+						        ng-options="country.nume for country in countries track by country.nume" 
+						        ng-change="onChanged()"
+						        >
+						        <option value=""> -- No Country -- </option>
+						        </select>
+				     <br>
+				</div>
+				<br>
+				 <label class="col-md-3 col-form-label">County Name</label>
+				<div class="col-md-9 selectContainer">
+					<select class="form-control" name="juset" ng-model="locality.judet" 
+						        ng-options="county.nume for county in counties track by county.nume" 
+						        ></select>
+					<br>
+				</div>
+				
+				
+            </div>
+            <button class="btn btn-primary" type="submit">
+                <i class="glyphicon glyphicon-save"></i>
+                Save
+            </button>
+            <button class="btn btn-danger" type="button" ng-click="resetData()">
+                <i class="glyphicon glyphicon-remove"></i>
+                Reset
+            </button>
+        </form>
+    </div>
+</div>

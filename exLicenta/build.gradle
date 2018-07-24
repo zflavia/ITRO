@@ -1,0 +1,102 @@
+allprojects {
+    group 'ro.uvt.fmi'
+    version '0.1'
+	loadConfiguration()
+}
+
+apply plugin: 'ear'
+
+repositories {
+        mavenCentral()  
+        jcenter()
+}
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+
+    repositories {
+        mavenCentral()  
+        jcenter()    
+	    maven {
+	        url "https://repository.jboss.org/"
+	    }
+    }
+}
+
+def loadConfiguration() {
+	def environment = hasProperty('env') ? env : 'dev'
+	project.ext.environment = environment
+	println "Environment is set to $environment"
+	def configFile = file('config.groovy')
+	def config = new ConfigSlurper(environment).parse(configFile.toURL())
+	ext.config = config
+}
+
+dependencies{
+    deploy project(path:':Persistenta')
+	deploy project(path:':Business')
+	deploy project(path:':Presentation', configuration:'archives')
+	deploy project(path:':PresentationUser', configuration:'archives')
+		
+	earlib  'com.google.guava:guava:18.0'
+	earlib  'org.json:json:20160212'
+	earlib  'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+	earlib  'com.squareup.retrofit2:retrofit:2.1.0'
+	earlib 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+    earlib 'com.squareup.retrofit2:converter-gson:2.0.2'
+    earlib 'com.squareup.retrofit2:converter-scalars:2.0.2'
+    earlib  group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+}
+
+task buildEAR( type: Ear) {
+    appDirName 'src/main/app'  // use application metadata found in this folder
+    libDirName 'APP-INF/lib'  // put dependency libraries into APP-INF/lib inside the generated EAR;
+                                // also modify the generated deployment descriptor accordingly
+    deploymentDescriptor {  // custom entries for application.xml:
+        applicationName = "licenta"
+        initializeInOrder = true
+        displayName = "licentaTest"  // defaults to project.name
+        description = "licenta gradle Demo for EJB in EAR"  // defaults to project.description
+        module("Persistenta-0.1.jar", "ejb")
+        webModule("Presentation-admin-0.1.war", "itroAdmin") 
+        webModule("PresentationUser-user-0.1.war", "itro") 
+    }
+}
+
+task deploy(dependsOn: buildEAR, type: Copy) {
+     println "configure task deploy"
+ 
+     from('build/libs/') {
+          include '*.ear'
+     }
+ 
+     into "${config.wildfly.serverRootDir}"+"/standalone/deployments/"
+ 
+     //def target="${project.name}.ear"
+     def target="exLicenta-0.1.ear"
+     def ok=new File("${config.wildfly.serverRootDir}/standalone/deployments/${target}.deployed");
+     def nok=new File("${config.wildfly.serverRootDir}/standalone/deployments/${target}.failed");   
+ 
+
+     doFirst {
+          println "deploy doFirst"
+          if(ok.exists()) { ok.delete() }
+          if(nok.exists()) { nok.delete() }
+     }
+ 
+     doLast {
+          println "executing wildfly deploy..."
+           def deployed=false
+           for(def i=0;i<100;i++) {
+ 			  ok=new File("${config.wildfly.serverRootDir}/standalone/deployments/${target}.deployed");
+ 			  nok=new File("${config.wildfly.serverRootDir}/standalone/deployments/${target}.failed");   
+               if(ok.exists()) { deployed=true; break }else{println('not deplaoyed')}
+               if(nok.exists()) { break }
+ 				println (ok.getAbsolutePath());
+               sleep(500);
+ 
+          }
+          if(deployed) { println("deploy ok.") }
+          else { throw new RuntimeException("Deployment failed, see Wildfly logs!") }
+     }
+}

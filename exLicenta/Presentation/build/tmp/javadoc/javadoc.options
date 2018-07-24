@@ -1,0 +1,6 @@
+-classpath 'D:\\scoala\\workspace\\exLicenta\\Presentation\\build\\classes\\main;D:\\scoala\\workspace\\exLicenta\\Presentation\\build\\resources\\main;C:\\Users\\zflavia\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\1.7.18\\b631d286463ced7cc42ee2171fe3beaed2836823\\slf4j-api-1.7.18.jar'
+-d 'D:\\scoala\\workspace\\exLicenta\\Presentation\\build\\docs\\javadoc'
+-doctitle 'Presentation 0.1 API'
+-quiet 
+-windowtitle 'Presentation 0.1 API'
+'D:\\scoala\\workspace\\exLicenta\\Presentation\\src\\main\\java\\Library.java'

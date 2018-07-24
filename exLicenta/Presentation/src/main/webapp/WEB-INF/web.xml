@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<distributable/>
+	
+    <display-name>ITRO</display-name>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>secureLoginITRO</realm-name>
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/jsp/admin/authErr.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+	<filter>
+    	<filter-name>CustomFilter</filter-name>
+    	<filter-class>ro.uvt.fmi.itro.security.CustomFilter</filter-class>
+  </filter>
+	<filter-mapping>
+    	<filter-name>CustomFilter</filter-name>
+   		<url-pattern>/judetMng</url-pattern>
+  </filter-mapping> 
+  <filter-mapping>
+    	<filter-name>CustomFilter</filter-name>
+   		<url-pattern>/limbaMng</url-pattern>
+  </filter-mapping> 
+  <filter-mapping>
+    	<filter-name>CustomFilter</filter-name>
+   		<url-pattern>/taraMng</url-pattern>
+  </filter-mapping>   
+  <filter-mapping>
+    	<filter-name>CustomFilter</filter-name>
+   		<url-pattern>/traducatorMng</url-pattern>
+  </filter-mapping> 
+  <filter-mapping>
+    	<filter-name>CustomFilter</filter-name>
+   		<url-pattern>/userMng</url-pattern>
+  </filter-mapping>   
+  <filter-mapping>
+    	<filter-name>CustomFilter</filter-name>
+   		<url-pattern>/itroAdmin</url-pattern>
+  </filter-mapping>  
+  <filter-mapping>
+    	<filter-name>CustomFilter</filter-name>
+   		<url-pattern>/</url-pattern>
+  </filter-mapping>              
+</web-app>

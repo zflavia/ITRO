@@ -1,0 +1,99 @@
+{
+  "hello": "Salut!",
+  "button_lang_ro": "Romanian",
+  "button_lang_fr": "French",
+  "button_lang_en": "English",
+  "welcome_message": "Welcome to the AngularJS multilingual site",
+  "g": {
+    "edit": "Editeaza",
+    "delete": "Sterge",
+    "save": "Salveaza",
+    "reset": "Reseteaza",
+    "actions": "Actiuni",
+    "search": "Cauta",
+    "add": "Adauga",
+    "browse": "Navigheaza",
+    "close": "Inchide",
+    "letters": "Litere"
+  },
+  "menu": {
+    "user_profile" :"Profilul Utilizatorului",
+    "settings" :"Setari",
+    "logout" :"Logout",
+    "user": "Utilizator",
+    "language": "Limba",
+    "country": "Tara",
+    "county": "Judetul",
+    "locality": "Localitatea",
+    "translator": "Traducator",
+    "medalion": "Medalion",
+    "contact": "Contact"
+  },
+  "users": {
+    "user": "Utilizator",
+    "insert_user": "Introduce utilizator",
+    "show_users": "Afiseaza utilizatorii",
+    "actions": "Actiuni",
+    "username": "Nume utilizator",
+    "email": "Email",
+    "first_name": "Prenume",
+    "last_name": "Nume",
+    "password": "Parola",
+    "alias": "Alias"
+  },
+  "language": {
+    "language": "Limba"
+  },
+  "country": {
+    "insert_country": "Introduce tara",
+    "edit_country": "Editeaza tara",
+    "show_countries": "Afiseaza tari",
+    "country_name": "Nume Tara",
+    "country": "Tara"
+  },
+  "county": {
+    "insert_county": "Introduce judet",
+    "edit_county": "Editeaza judet",
+    "show_counties": "Afiseaza judete",
+    "county_name": "Nume Judet",
+    "county": "Judet"
+  },
+  "locality": {
+    "insert_locality": "Introduce localitate",
+    "edit_locality": "Editeaza localitate",
+    "show_localities": "Afiseaza localitati",
+    "locality_name": "Nume localitate",
+    "locality": "Localitate"
+  },
+  "translators": {
+    "translators": "Traducatori",
+    "insert_translator": "Introduce traducator",
+    "edit_translator": "Editeaza traducator",
+    "show_translators": "Afiseaza traducator",
+    "insert_photo": "Introduce Poza",
+    "name": "Nume traducator",
+    "birthDate": "Data nasterii",
+    "deathDate": "Data decesului",
+    "bornPlace": "Locul nasterii",
+    "deathPlace": "Locul decesului",
+    "day": "Zi",
+    "month": "Luna",
+    "alias": "Alias",
+    "bibliographicalAspects": "Aspecte bibliografice",
+    "duties": "Atributii/ Contributii editoriale, sociale",
+    "activity": "Activitate traducator",
+    "translations_list": "Lista traduceri",
+    "bibliography": "Bibliografie",
+    "presenceInBDD": "Prezente in BDD",
+    "author": "Autor",
+    "title": "Titlu",
+    "year": "An",
+    "details": "Detalii",
+    "type": "Tip",
+    "link": "Link"
+  },
+  "contact": {
+    "address": "Adresa"
+  }
+
+}

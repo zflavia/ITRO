@@ -1,0 +1,114 @@
+a.navbar-brand {
+
+    font-family: 'Orbitron';
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    color: white !important;
+    margin-right: 30px;
+    /*background: url('../img/logo-hitro.png');*/
+    /*-webkit-background-size: 100% 100%;*/
+    /*background-size: 100% 100%;*/
+    /*width: 200px;*/
+    /*height: 90px;*/
+    /*margin-top: 0;*/
+}
+
+.center {
+    text-align: center;
+}
+
+li.no-style a.no-style:hover{
+    background: none;
+}
+
+.container {
+    width: 80%;
+}
+
+.traducatori {
+    padding: 20px;
+}
+.letters ul {
+    padding: 5px;
+}
+.letters ul li {
+    display: inline-block;
+    margin-right: 9px;
+    margin-bottom: 20px;
+}
+
+.navbar-inverse {
+    background-color: #2980b9 !important;
+    border-color: #2980b9 !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.lista-pseudonime li:only-of-type
+{
+    list-style-type: none;
+}
+.lista-pseudonime ol:only-of-type
+{
+    list-style-type: none;
+}
+.lista-traduceri li :only-of-type
+{
+    list-style-type  : none  ;
+}
+.lista-traduceri ol :only-of-type
+{
+    list-style-type  : none  ;
+}
+.bibliografie li :only-of-type
+{
+    list-style-type  : none ;
+}
+.bibliografie ol :only-of-type
+{
+    list-style-type  : none ;
+}
+
+.bibliografie-activitate-traducere li:only-of-type
+{
+    list-style-type  : none;
+}
+.bibliografie-activitate-traducere ol:only-of-type
+{
+    list-style-type  : none;
+}
+
+
+.prezente-in-BDD li:only-of-type
+{
+    list-style-type  : none ;
+}
+.prezente-in-BDD ol:only-of-type
+{
+    list-style-type  : none ;
+}
+#img-ro
+{
+    background-image: url( 'https://upload.wikimedia.org/wikipedia/commons/5/54/Romania_Flag.svg' );
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+}
+#img-en
+{
+    background-image: url( 'https://d2d5f3568fvb9s.cloudfront.net/wp-content/uploads/2016/06/28194712/1280px-Flag_of_the_United_Kingdom.svg_-960x500.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+}
+#img-fr
+{
+    background-image: url( 'http://shop.flags.ro/31-large_default/flag-of-france.jpg' );
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+}

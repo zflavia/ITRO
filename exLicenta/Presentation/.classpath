@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-9/"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="src" path="/Business">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/Persistenta">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt/0.2/5de5a553f0113806091ec69512d6f96cb2fcef62/jjwt-0.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt/0.2/91e12a0c77d8ea7dc97c60e3db85659325dd2e93/jjwt-0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-security/7.2.0.Final/651bb079b9091581639347c694925882c953f969/jboss-as-security-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-security/7.2.0.Final/b3a3ae83ca88f4601936423561f0b02dde738ca8/jboss-as-security-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jackson-provider/3.1.4.Final/944edf1598173907ad4c134f1bfe53cc04faf8ba/resteasy-jackson-provider-3.1.4.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jackson-provider/3.1.4.Final/3173859e74f34509658935199634ec69206a5f56/resteasy-jackson-provider-3.1.4.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.1.4.Final/1673933194194809ea847e0db5da45afe4bbafa5/resteasy-jaxrs-3.1.4.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.1.4.Final/b6da0fb9a35b231ed6649da73c95bd33b5a60144/resteasy-jaxrs-3.1.4.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.6/97bb93c1badeae97a3d37e3c902df2985ee3de34/slf4j-api-1.7.6-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.6/562424e36df3d2327e8e9301a76027fca17d54ea/slf4j-api-1.7.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.3/42e1a9bae2802bc0b53efa3d96ba7cfaf9dcd9fc/jackson-databind-2.7.3-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.3/f12e6cd05cbaecd74d16e685d45b627732939e42/jackson-databind-2.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/6c98d6766e72d5575f96c9479d1c1d3b865c6e25/junit-4.10-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-infinispan/7.2.0.Final/4ef366cad47fb6411faa52f6220e3056ae14be8f/jboss-as-clustering-infinispan-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-infinispan/7.2.0.Final/1f6347a238075cfb553066e9de460894b6ee9b71/jboss-as-clustering-infinispan-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-transactions/7.2.0.Final/b8907a8e273aad310ef68a39c9a1ad8dc2f4d1e8/jboss-as-transactions-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-transactions/7.2.0.Final/232e9f001648dda9f68196ff300ad56fa2e6d7c2/jboss-as-transactions-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-ee/7.2.0.Final/94a84dcac7f37e4213e8b99baa040a516ed3d81d/jboss-as-ee-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-ee/7.2.0.Final/49386f50451abde031835e5fadb5b8049de10b43/jboss-as-ee-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-jgroups/7.2.0.Final/7093bb7d446e09940afc6619acaa23f77e3431d9/jboss-as-clustering-jgroups-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-jgroups/7.2.0.Final/8c05245a4f7dd0ae683b4abe0999fa01611abff4/jboss-as-clustering-jgroups-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-jmx/7.2.0.Final/dc6777724b13fa3a6d50f73130bb4a9e9fc3bf48/jboss-as-jmx-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-jmx/7.2.0.Final/41ba1d02efd4cadc77288e762123d78bc34718d1/jboss-as-jmx-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-jacorb/7.2.0.Final/4a384b21c91faf7b3488ae4e39f1ae354cfc0be5/jboss-as-jacorb-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-jacorb/7.2.0.Final/cd9155d6ed854dcdae130ba402b00988e03d1ed9/jboss-as-jacorb-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-naming/7.2.0.Final/7bff65769c12de74ecdb2f5e49257fc1a94c8176/jboss-as-naming-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-naming/7.2.0.Final/b234cd32bab68702999d8df709832aca8400ec99/jboss-as-naming-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-common/7.2.0.Final/9432d4197c4a5c54c3b4b25a98c6521ed277ad12/jboss-as-clustering-common-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-common/7.2.0.Final/6619bdf654d3402fda261feabd5cbbf95d62d08b/jboss-as-clustering-common-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-server/7.2.0.Final/cf01bae1beb234b4075980544cb4d36bfff08f07/jboss-as-server-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-server/7.2.0.Final/7c5d60587657196684c7d7429cada64d85532c9f/jboss-as-server-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-domain-http-interface/7.2.0.Final/dd6cd7d318f9084ffdfcf4cb968514a4244c83a4/jboss-as-domain-http-interface-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-domain-http-interface/7.2.0.Final/cc2f93c8cac4248ce98b0dc3aa8bb626ef4ea396/jboss-as-domain-http-interface-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-remoting/7.2.0.Final/69354f18516d58cbcb64fc47b83f355291dc2a58/jboss-as-remoting-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-remoting/7.2.0.Final/d288803ef46c2ae9aa1a9fdf5a6ee9305be13e31/jboss-as-remoting-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-domain-management/7.2.0.Final/d0524827b0d8810e71f93df950aafdd8af555fde/jboss-as-domain-management-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-domain-management/7.2.0.Final/df66356e683f0c97eef629dd1409623441d4bdee/jboss-as-domain-management-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-platform-mbean/7.2.0.Final/18c0e8249569932d42f18f471f7ed39c3a51a4e0/jboss-as-platform-mbean-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-platform-mbean/7.2.0.Final/6583264cec098544293f4b8a977a26b992e3aa0d/jboss-as-platform-mbean-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-threads/7.2.0.Final/f06c1d2728fa0e344c821ac69258ef032c22c817/jboss-as-threads-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-threads/7.2.0.Final/32a335b169ce45a0f98709e4ded8f94a2ee21c7e/jboss-as-threads-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-controller/7.2.0.Final/17f430c2a97e55179c9505e59bec281e101b7bb1/jboss-as-controller-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-controller/7.2.0.Final/e9fde43b59f27a99c4814d80f4d73d02df3a2c15/jboss-as-controller-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-deployment-repository/7.2.0.Final/3af6d9b7d2086a47f99ebd5a61215df0de5a6535/jboss-as-deployment-repository-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-deployment-repository/7.2.0.Final/fa9fee4a2b67048c917b41bfc8707ca660d9d1ae/jboss-as-deployment-repository-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-network/7.2.0.Final/4f0464f83f70d154149392626d466a1130c3bc6b/jboss-as-network-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-network/7.2.0.Final/4e21fd2c24212dd6d929c57b5d5b352ad24bd06a/jboss-as-network-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.msc/jboss-msc/1.0.4.GA/be6148763e374b60e16eb99a4aecfc74b7addea6/jboss-msc-1.0.4.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.msc/jboss-msc/1.0.4.GA/f447d041de16c430e62abc00d9d424c9dc1b5e1d/jboss-msc-1.0.4.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.security/jboss-negotiation-extras/2.2.2.Final/4832f01c8e672db0f7c8c5d601344b9dece87de6/jboss-negotiation-extras-2.2.2.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.security/jboss-negotiation-extras/2.2.2.Final/744fa9081a1488d747218d1ee21e89922a5a80c3/jboss-negotiation-extras-2.2.2.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.security/jboss-negotiation-spnego/2.2.2.Final/6d3a6adb1eb31e562832c7e1cf1949911c8da4e6/jboss-negotiation-spnego-2.2.2.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.security/jboss-negotiation-spnego/2.2.2.Final/4b908068e7297e28bfaa55066d9742ebace4749d/jboss-negotiation-spnego-2.2.2.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-process-controller/7.2.0.Final/5fd9d7ce3292fb733c13bb76ba7c5ffac971e1f9/jboss-as-process-controller-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-process-controller/7.2.0.Final/60da82411fd56d84e49e358c5e29bafec397ee71/jboss-as-process-controller-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-remote-naming/1.0.5.Final/46a176be55b43ee1f6668d3dff3a80bcf05d8b37/jboss-remote-naming-1.0.5.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-remote-naming/1.0.5.Final/1643da83d9a2a7153cd6f80f5fb766e293948c7b/jboss-remote-naming-1.0.5.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-controller-client/7.2.0.Final/94ed100913eea133552c335078bb1e61f33ce317/jboss-as-controller-client-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-controller-client/7.2.0.Final/a2bed205402082d3e98980f680f4b22c1790a8ab/jboss-as-controller-client-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-protocol/7.2.0.Final/131d28450485ed491ddccd753c0659c11e1df329/jboss-as-protocol-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-protocol/7.2.0.Final/2a94a8d8738183873b8f5e9f5255a2357c726b12/jboss-as-protocol-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-ejb-client/1.0.0.Final/96faf8c508ee68c1bcc685e4b26a031c2282d753/jboss-ejb-client-1.0.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-ejb-client/1.0.0.Final/a4261bb553342317e666809a47217d477e83cf2b/jboss-ejb-client-1.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.remotingjmx/remoting-jmx/1.1.0.Final/a642b2a03f34b80c550339db73d9f0030de5ef0/remoting-jmx-1.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.remotingjmx/remoting-jmx/1.1.0.Final/6eda0f662ca8d4cc9d5dd7fbee35909e855d63dc/remoting-jmx-1.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.remoting3/jboss-remoting/3.2.14.GA/ff2ecb8b2c0b6c25105806fbb620e802ad59fc97/jboss-remoting-3.2.14.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.remoting3/jboss-remoting/3.2.14.GA/3b46395e73af33e543ca0382d1958b4aed97b29d/jboss-remoting-3.2.14.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.sasl/jboss-sasl/1.0.3.Final/17aab0f032f8241501e0b8fe9a182065da6fa996/jboss-sasl-1.0.3.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.sasl/jboss-sasl/1.0.3.Final/81f5812ad42b2ecc3193eac894964c1fd8a19be6/jboss-sasl-1.0.3.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.security/jboss-negotiation-common/2.2.2.Final/198d69106995ffec6a0c96a20b9095c019ea1571/jboss-negotiation-common-2.2.2.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.security/jboss-negotiation-common/2.2.2.Final/9ccf5a9c23ddae9ecbef3d64930e68521acdfa27/jboss-negotiation-common-2.2.2.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.2.4.Final/b02d7b80cdadbfc51106252238fc1a667c8287eb/hibernate-validator-5.2.4.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.2.4.Final/fb18766b576aa6632bcfe9a20a023cbd52bf9769/hibernate-validator-5.2.4.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.1.0.Final/d639e1dc0bd4e53e57f19494c8984b442ca1c082/hibernate-entitymanager-5.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.1.0.Final/30d9f676363010b0958c9b738abc197235766f9c/hibernate-entitymanager-5.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.1.0.Final/88a4d5e57ab2cb0fef12866c008c90fbb2ecde37/hibernate-core-5.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.1.0.Final/1b5ac619df76cfd67222ca7cddcee6b0a5db8d0c/hibernate-core-5.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.metadata/jboss-metadata-ear/7.0.8.Final/b74a4797e77e593d9383abc773264eefdcfa0f0a/jboss-metadata-ear-7.0.8.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.metadata/jboss-metadata-ear/7.0.8.Final/887a8c6dfa23cfdc4a744631bf04e003638875b2/jboss-metadata-ear-7.0.8.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-cachestore-remote/5.2.1.Final/58d3aa1cdba059613fc8f5e25cfef0b1727200a4/infinispan-cachestore-remote-5.2.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-cachestore-remote/5.2.1.Final/92e5635bf0886ab13a77c070beab25d1a65ec130/infinispan-cachestore-remote-5.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-core/5.2.1.Final/18764d08f4a83bc2179483989cb70e2d14d4a801/infinispan-core-5.2.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-core/5.2.1.Final/e5761d114684ca1a10e374555473813d2c60cc78/infinispan-core-5.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.metadata/jboss-metadata-ejb/7.0.8.Final/f83961afd8e4314eeef5f5213586add7bcb74122/jboss-metadata-ejb-7.0.8.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.metadata/jboss-metadata-ejb/7.0.8.Final/39541af043dd4c7e4850aae6eea3b62b604dd2dc/jboss-metadata-ejb-7.0.8.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/203038e420aaa3fa6df8bad4fda19ca1e2824005/hibernate-commons-annotations-5.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.metadata/jboss-metadata-common/7.0.8.Final/d2b87e11dc101a713b154bcd80c22cbaa684329c/jboss-metadata-common-7.0.8.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.metadata/jboss-metadata-common/7.0.8.Final/7bc804c625171f211976dff4f40055c83fe5c36/jboss-metadata-common-7.0.8.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3625e6818158ddb4754fa2ec51299e5f57e596b4/jboss-logging-3.3.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.picketbox/picketbox/4.0.15.Final/c566cc7c2fa5f26710ddd574b768ef5b57d3134f/picketbox-4.0.15.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.picketbox/picketbox/4.0.15.Final/68160d462c7e8a3969b10c4bf69518f6f8620b9e/picketbox-4.0.15.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.security.jacc/jboss-jacc-api_1.4_spec/1.0.2.Final/918339e97c272f5b425fc1e882bd833d9965c7d/jboss-jacc-api_1.4_spec-1.0.2.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.security.jacc/jboss-jacc-api_1.4_spec/1.0.2.Final/9a6e12ee46b076400daf66997260ea0ce4e8a872/jboss-jacc-api_1.4_spec-1.0.2.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.picketbox/picketbox-infinispan/4.0.15.Final/952e53f70a82efa4c4ed1347e15ea4c219f7d761/picketbox-infinispan-4.0.15.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.picketbox/picketbox-infinispan/4.0.15.Final/36c54c3dab1c07bbe737bcb2b13d3dec7b7614fc/picketbox-infinispan-4.0.15.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.picketbox/picketbox-commons/1.0.0.final/dd8dee192ec7bbd7b8722bac123c503d60326b8e/picketbox-commons-1.0.0.final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.picketbox/picketbox-commons/1.0.0.final/b0f0d1e040edb08e42e527bb6a411c3a9370919b/picketbox-commons-1.0.0.final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/6c5459816530a1962ac18cd315cc775b1b384329/commons-cli-1.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-version/7.2.0.Final/ead328681b7000a8e57a9b699c1df21021d2bf5/jboss-as-version-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-version/7.2.0.Final/823a38b6b06e31bf5ca796c9d14de48cab47829/jboss-as-version-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-api/7.2.0.Final/a837a2faceaaa16cf5823fa381bf48b73fc9f557/jboss-as-clustering-api-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-clustering-api/7.2.0.Final/3479251edb25310e9a6c0ad0ca2b5142d46cfd92/jboss-as-clustering-api-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-build-config/7.2.0.Final/e70f217906614573f55c6cd058874217df0633f5/jboss-as-build-config-7.2.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.as/jboss-as-build-config/7.2.0.Final/edf23089b4e5dc262ab3e12b2e626c08ad95bf79/jboss-as-build-config-7.2.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/e4a8a713cc113705f39d84d488332075ea8173e3/converter-gson-2.0.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-scalars/2.0.2/6545ed70f37fa10cc99845cc138256b3a055cfb1/converter-scalars-2.0.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-scalars/2.0.2/a3bfef8122db8c395b4dc7c9845e27829bf6a6f9/converter-scalars-2.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/3564ebef90ac75e61ed65ab9af0f422ce92d4afa/retrofit-2.1.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.0/4c466b529bc05a35546ae8a8e9fedc6f7495e49f/logging-interceptor-3.3.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.0/ba14d8b7789efde5ee150eacb297b7237abca39/logging-interceptor-3.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.6.2/38cb17a6d4c13f78c5c4c441334e67a3b8b3b6c8/log4j-core-2.6.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.6.2/a91369f655eb1639c6aece5c5eb5108db18306/log4j-core-2.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.6.2/e1a1c94008a27a5678accf9fa62c9b176d551dc5/log4j-api-2.6.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.6.2/bd1b74a5d170686362091c7cf596bbc3adf5c09b/log4j-api-2.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.ejb/ejb-api/3.0/c4a90ff2371380520a3ca6f9f1c714f21b4a0ebb/ejb-api-3.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.ejb/ejb-api/3.0/d4855ba9a1ecd993b751880567ec06ffcbd6fe06/ejb-api-3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/jboss/jboss-annotations-ejb3/4.2.2.GA/d82452f044236820d7136dacda81455af08784db/jboss-annotations-ejb3-4.2.2.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.1.Beta1/b2290b67ee5c84577a8b5af4449925e601205416/jboss-jaxrs-api_2.0_spec-1.0.1.Beta1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.1.Beta1/66c0832acaba167c2fd7ee4cbaf212347854d57c/jboss-jaxrs-api_2.0_spec-1.0.1.Beta1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs-services/3.1.4.Final/1331655734baf9ff77a640bbc4081a22fbef976c/resteasy-jaxrs-services-3.1.4.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs-services/3.1.4.Final/66ddc84d47c77f0696f487f4477fb05ba2d3eaa1/resteasy-jaxrs-services-3.1.4.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/40f0a92b5fde6c76640f4586ad64f630eb481ffa/jboss-annotations-api_1.2_spec-1.0.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/6d7ff02a645227876ed550900d32d618b8f0d556/jboss-annotations-api_1.2_spec-1.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1.1/159e45688875fdabff19c9ceb7335aefe4df8339/activation-1.1.1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1.1/485de3a253e23f645037828c07f1d7f1af40763a/activation-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/b9f9e3e5255b6ddc3bf21be05428c7a60d00e042/httpclient-4.5.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/caf033a4a7c37b4a8ff3ea084cba591539b0b69/commons-io-2.5-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/d853625d8001c00d40abed553e670279504699f9/jcip-annotations-1.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/afba4942caaeaf46aab0b976afd57cc7c181467e/jcip-annotations-1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-jaxrs/1.9.13/6bf32987d565b50ecc3897362ed19882af4e5591/jackson-jaxrs-1.9.13-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-jaxrs/1.9.13/534d72d2b9d6199dd531dfb27083dd4844082bba/jackson-jaxrs-1.9.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.9.13/5b45f8e8027858e8a455f031a32638b615a307df/jackson-xc-1.9.13-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.9.13/e3480072bc95c202476ffa1de99ff7ee9149f29c/jackson-xc-1.9.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/83113901bc2a377d698ccea35ad842786f37c6ad/jackson-mapper-asl-1.9.13-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7/jackson-mapper-asl-1.9.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/6ed53c5ce78344e14296aa47769d67b10e1c7b2c/jackson-core-asl-1.9.13-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/3c304d70f42f832e0a86d45bd437f692129299a4/jackson-core-asl-1.9.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.0/d0d412f71000701f765e1e280764e92337c659f5/jackson-annotations-2.7.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.0/19f42c154ffc689f40a77613bc32caeb17d744e3/jackson-annotations-2.7.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/40a980d44cc06f8facc1b184c13a1bbd04944ebe/jackson-core-2.7.3-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/1499b854ae9f370409792db5af1b552dc7d9682f/jackson-core-2.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/2ccf1154d1a8936042a8a742dc3e611d02ac7213/hamcrest-core-1.1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-common-core/2.2.17.GA/daf51a9f75bbc91bdbfe07fd60abe98232f4baa5/jboss-common-core-2.2.17.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-common-core/2.2.17.GA/3993677c640af597d8e748c4a124288a4a99fe58/jboss-common-core-2.2.17.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-dmr/1.1.6.Final/a6c69d6a79842e029ff28ae9dad2110af4e33068/jboss-dmr-1.1.6.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-dmr/1.1.6.Final/3aaac7b01492b29710a5d81c6bbef424bb1e0697/jboss-dmr-1.1.6.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/614a36762219d78e9ea3be22c47e6c2933e2db71/jandex-2.0.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/3e899258936f94649c777193e1be846387ed54b3/jandex-2.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.invocation/jboss-invocation/1.1.1.Final/eb422eb8c18ff039059e2106ff482d18ffdc227e/jboss-invocation-1.1.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.invocation/jboss-invocation/1.1.1.Final/4934fba5357d21eb089c370e77f9b41e16de9726/jboss-invocation-1.1.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/log4j-jboss-logmanager/1.0.1.Final/8d5d8214fac933a2f59662847c6b1363040b7e55/log4j-jboss-logmanager-1.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/log4j-jboss-logmanager/1.0.1.Final/def5761d5dcf51baad2c7403706609c72923ba7f/log4j-jboss-logmanager-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.4.0.Final/6201c7fc09da88a3aa8944e42d07bb4bd4ec2f15/jboss-logmanager-1.4.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logmanager/jboss-logmanager/1.4.0.Final/91c197ff1a4116fe3ec2a1bcf53eda156ac70055/jboss-logmanager-1.4.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling-river/1.3.16.GA/3fde49de8a428e2bc8b704f774d965772e8c828e/jboss-marshalling-river-1.3.16.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling-river/1.3.16.GA/8f5bcd5fb4d5f875f99c1385e6ab1890eb05fe9d/jboss-marshalling-river-1.3.16.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling/1.3.16.GA/36976326a2def839ada20555ba603e87e44202dd/jboss-marshalling-1.3.16.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.marshalling/jboss-marshalling/1.3.16.GA/3fafd8fc72859b70d8cd6d1ff2197bdf2fe9c0e1/jboss-marshalling-1.3.16.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.modules/jboss-modules/1.2.0.CR1/ef83f1dc77724b19b10e7366c359bdfb548ad91e/jboss-modules-1.2.0.CR1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.modules/jboss-modules/1.2.0.CR1/595ba224abd87630776e0c882032882ffc0edca2/jboss-modules-1.2.0.CR1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.stdio/jboss-stdio/1.0.1.GA/b6bbf9af026b4c8cb3db1cd45770986f763de211/jboss-stdio-1.0.1.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.stdio/jboss-stdio/1.0.1.GA/113ac47b216097482d4b958a93bd1f601b9fb6d9/jboss-stdio-1.0.1.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.threads/jboss-threads/2.1.0.Final/7b93fd0e7b805f9411fe12c433572dc1c1e87158/jboss-threads-2.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.threads/jboss-threads/2.1.0.Final/76056dc841a7f8afbbe983d245743de29ec69f42/jboss-threads-2.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-vfs/3.1.0.Final/9a7d9835a70481dd322601a8c173a83130490c1a/jboss-vfs-3.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-vfs/3.1.0.Final/d234479ff4ce2282789dedf378b052cde00bb543/jboss-vfs-3.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-cachestore-jdbc/5.2.1.Final/26ae09abaa0c662aeadf22aefd8daa91e55333c1/infinispan-cachestore-jdbc-5.2.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-cachestore-jdbc/5.2.1.Final/2000b8406adec831de9958a1d9fb5b0132a71dfa/infinispan-cachestore-jdbc-5.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-client-hotrod/5.2.1.Final/8320fe5f6305ee448f258001ddabe92e83ecd3c8/infinispan-client-hotrod-5.2.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.infinispan/infinispan-client-hotrod/5.2.1.Final/9ff736ff9de568226618a120b08edc372bcaec7c/infinispan-client-hotrod-5.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jacorb/jacorb/2.3.2.jbossorg-4/cf587a2a4126ab5387fc548c981b42d9c9f55204/jacorb-2.3.2.jbossorg-4-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jacorb/jacorb/2.3.2.jbossorg-4/b391afe133f1c363be58c4f3b5745b718bea3d3b/jacorb-2.3.2.jbossorg-4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-transaction-spi/7.0.0.Final/e88d12c13251f75ea272f12b4c777e387fa70da2/jboss-transaction-spi-7.0.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/jboss-transaction-spi/7.0.0.Final/56a4f3810c3d8d01c09f412ba6e7e3f0a7b3dc6c/jboss-transaction-spi-7.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.jbossts.jts/jbossjts-jacorb/4.17.3.Final/7cc308bcf3db4b50eddf20b81a8ba9b8ffc6898f/jbossjts-jacorb-4.17.3.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.jbossts.jts/jbossjts-jacorb/4.17.3.Final/c4dd0253592b0861a22782a9b2c54a7b45630778/jbossjts-jacorb-4.17.3.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.jbossts.jts/jbossjts-integration/4.17.3.Final/8f38d36d1e67620879dffd2d8c45fab8eccff08b/jbossjts-integration-4.17.3.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.jbossts.jts/jbossjts-integration/4.17.3.Final/273866ee917c6afdf72731895ffb1c8525779227/jbossjts-integration-4.17.3.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.resource/jboss-connector-api_1.6_spec/1.0.1.Final/370f539bc5aaf9d190866511324321caaeb77b08/jboss-connector-api_1.6_spec-1.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.resource/jboss-connector-api_1.6_spec/1.0.1.Final/431c55aa6886efa94231670a5b625e04ecf9d798/jboss-connector-api_1.6_spec-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/1cb80abf6f58f6091944060d50b1dbad050d1962/jboss-transaction-api_1.1_spec-1.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/18f0e1d42f010a8b53aa447bf274a706d5148852/jboss-transaction-api_1.1_spec-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.web/jbossweb/7.0.16.Final/cae51961f04f89294589661c650427d5c417ace4/jbossweb-7.0.16.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.web/jbossweb/7.0.16.Final/754ae976fc0f0f86530498fddc152ed171bf211/jbossweb-7.0.16.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.servlet/jboss-servlet-api_3.0_spec/1.0.1.Final/3fbb9bc74b3190e030d45c8a14314a13df24d49b/jboss-servlet-api_3.0_spec-1.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.servlet/jboss-servlet-api_3.0_spec/1.0.1.Final/4097758c8002cef51d6b8585229e314192e18eab/jboss-servlet-api_3.0_spec-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/ce902532a348a685692095f86d14800314078813/okhttp-3.3.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/fbdc82f12c6421051b4ce91def985e5ac4668867/gson-2.6.1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/b49dafc9cfef24c356827f322e773e7c26725dd2/commons-lang3-3.4-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/ad97fe8faaf01a3d3faacecd58e8fa6e78a973ca/guava-18.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/6b4ee9a02a4ed9eb92efe6104c424f70c822c8c8/json-20160212-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.6/380ef5226de2c85ff3b38cbfefeea881c5fce09d/mysql-connector-java-5.1.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.4/c5c19e3e6af6b452def290cde12a3ee4c35c893c/httpcore-4.4.4-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.4/b31526a230871fbe285fbcbe2813f9c0839ae9b0/httpcore-4.4.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/3f15fff45d57656685abfee9e8302bf14580044c/commons-codec-1.9-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/staxmapper/1.1.0.Final/731cde759f4ad47bee64c61b70b16b7b1df038d9/staxmapper-1.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss/staxmapper/1.1.0.Final/af938b7fead1eb6e1d54e001aceb7d92bf71c013/staxmapper-1.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.com.sun.httpserver/httpserver/1.0.1.Final/6b76acf61dcf00377afc5156c6b15db53de667f7/httpserver-1.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.com.sun.httpserver/httpserver/1.0.1.Final/76180b01b49dcae8ab81ddb2b97585adfa7b0f85/httpserver-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.xnio/xnio-nio/3.0.7.GA/d99627221be32c492f5b6fc159ab5e899661f5f5/xnio-nio-3.0.7.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.xnio/xnio-nio/3.0.7.GA/29f645c2c3838c7c2e449d2842181a4248c5ed22/xnio-nio-3.0.7.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.xnio/xnio-api/3.0.7.GA/680b98cf50bc8a6a29007601709a97a43d666f59/xnio-api-3.0.7.GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.xnio/xnio-api/3.0.7.GA/b71b19925ed5299003588ce50c797694f3834211/xnio-api-3.0.7.GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jgroups/jgroups/3.2.7.Final/915324701dcc6cc173c61d92b39825ea4c2a5c05/jgroups-3.2.7.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jgroups/jgroups/3.2.7.Final/ed33f172801ff5784172672f1ac171e4afc1207c/jgroups-3.2.7.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/aed48c8b8ca5820d0c2d0d8a00f4322379b37746/jboss-annotations-api_1.1_spec-1.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/8f9335f966885529d1254793182ff3df1c515eb8/jboss-annotations-api_1.1_spec-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final/c9280b2a1866d55ec6824c53810edbb0a3c98f64/jboss-interceptors-api_1.1_spec-1.0.1.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final/b08fd6c1ba2d852474446c07f331ca38b2d43c4b/jboss-interceptors-api_1.1_spec-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.rmi/jboss-rmi-api_1.0_spec/1.0.4.Final/6e1ad509e0e8d59eb583208424ef53c5e3f8d2b9/jboss-rmi-api_1.0_spec-1.0.4.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.rmi/jboss-rmi-api_1.0_spec/1.0.4.Final/f7dc3adaae5eee613f2e5e1a2f9978d96cf5c22f/jboss-rmi-api_1.0_spec-1.0.4.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/3a5f5ed555660472caab77ad3acdf157db97f838/okio-1.8.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.0/818530d5e3e8f862d0aeefb4c2df8e07a1d9ad83/classmate-1.3.0-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.0/183407ff982e9375f1a1c4a51ed0a9307c598fc7/classmate-1.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/a8e7149359255f43e0e5e3b1837948f9ed5861fb/dom4j-1.6.1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/33fbaa7276b774ef0925f541640f6ff23fbc62dc/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/d8fdc08a455bc0b28bc0bed1f0d032d935cee8e1/javassist-3.20.0-GA-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/a84978fba1f1916bf2931e44d961705a9e64aec7/geronimo-jta_1.1_spec-1.1.1-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/aabab3165b8ea936b9360abbf448459c0d04a5a4/geronimo-jta_1.1_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-processor/1.1.0.Final/e9511d57addedf4a310c54362106113de8a07612/jboss-logging-processor-1.1.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-processor/1.1.0.Final/e90211033ad951a5e357f50d49bc0c4b04b54396/jboss-logging-processor-1.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.0.b2/d8525661c5a0a05702fa41873d250d135031ec25/xml-apis-1.0.b2-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.0.b2/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/sun-jaxb/jaxb-api/2.1.4/d98fd1f523d09b8fd771b7c7a296d660b3be3a91/jaxb-api-2.1.4-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/sun-jaxb/jaxb-api/2.1.4/b2dfeed54ac106bcd714ba59c1f52ef9167d56e/jaxb-api-2.1.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.jdeparser/jdeparser/1.0.0.Final/16cdfffc4e165323692d2fd16f0b26ca691a3c28/jdeparser-1.0.0.Final-sources.jar" kind="lib" path="/Users/flaviamicota/.gradle/caches/modules-2/files-2.1/org.jboss.jdeparser/jdeparser/1.0.0.Final/cb09bff8cf42de736a37f090c38b96656d965fa1/jdeparser-1.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+</classpath>

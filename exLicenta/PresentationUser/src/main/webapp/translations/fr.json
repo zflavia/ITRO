@@ -1,0 +1,100 @@
+{
+  "hello": "Bonjour",
+  "button_lang_ro": "Roumain",
+  "button_lang_fr": "Français",
+  "button_lang_en": "Anglais",
+  "welcome_message": "Bienvenue sur le site multilingue AngularJS",
+  "g": {
+    "edit": "Modifier",
+    "delete": "Effacer",
+    "save": "Enregistrer",
+    "reset": "Réinitialiser",
+    "actions": "Actes",
+    "search": "Chercher",
+    "add": "Ajouter",
+    "browse": "Feuilleter",
+    "close": "Inchide",
+    "letters": "Lettre"
+  },
+  "menu": {
+    "user_profile" :"Profil de l'utilisateur",
+    "settings" :"Paramètres",
+    "logout" :"Connectez - Out",
+    "user": "Utilisateur",
+    "language": "La langue",
+    "country": "Pays",
+    "county": "Comté",
+    "locality": "Localité",
+    "translator": "Traducteur",
+    "medalion": "Médaillon",
+    "contact": "Contact"
+  },
+  "users": {
+    "user": "Utilisateur",
+    "insert_user": "Insérer un utilisateur",
+    "show_users": "Afficher les utilisateurs",
+    "actions": "Actes",
+    "username": "Nom d'utilisateur",
+    "email": "Email",
+    "first_name": "Prénom Nom",
+    "last_name": "Nom de famille",
+    "password": "Mot de passe",
+    "alias": "Alias"
+  },
+  "language": {
+    "language": "La langue"
+  },
+  "country": {
+    "insert_country": "Insérer un pays",
+    "edit_country": "Editer un pays",
+    "show_countries": "Afficher les pays",
+    "country_name": "Nom du pays",
+    "country": "Pays"
+  },
+  "county": {
+    "insert_county": "Insérer le comté",
+    "edit_county": "Editer le comté",
+    "show_counties": "Afficher les comtés",
+    "county_name": "Nom du comté",
+    "county": "Comté"
+  },
+  "locality": {
+    "insert_locality": "Insérer la localitate",
+    "edit_locality": "Editer la localitate",
+    "show_localities": "Afficher les localités",
+    "locality_name": "Nom de la localité",
+    "locality": "Localité"
+  },
+  "translators": {
+    "translators": "Traducteurs",
+    "insert_translator": "Insérer le traducteur",
+    "edit_translator": "Editer le traducteur",
+    "show_translators": "Afficher les traducteurs",
+    "insert_photo": "Insérer l'image",
+    "name": "Nom du traducteur",
+    "birthDate": "Date de naissance",
+    "deathDate": "date de décès",
+    "bornPlace": "Lieu de naissance",
+    "deathPlace": "Lieu de mort",
+    "day": "Jour",
+    "month": "Mois",
+    "alias": "Alias",
+    "bibliographicalAspects": "Aspects biographiques",
+    "duties": "Devoirs / contributions éditoriales, sociales",
+    "activity": "Activité du traducteur",
+    "translations_list": "  Liste des traductions",
+    "bibliography": "Bibliographie",
+    "presenceInBDD": "Présent dans BDD",
+    "author": "Auteur",
+    "title": "Titre",
+    "year": "Année",
+    "details": "Détails",
+    "type": "Type",
+    "search": "Rechercher",
+    "link": "Lien"
+  },
+  "contact": {
+    "address": "Adresse"
+  }
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="6">
+  <application-name>licenta</application-name>
+  <description>licenta gradle Demo for EJB in EAR</description>
+  <display-name>licentaTest</display-name>
+  <initialize-in-order>true</initialize-in-order>
+  <module>
+    <ejb>Persistenta-0.1.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>Presentation-admin-0.1.war</web-uri>
+      <context-root>itroAdmin</context-root>
+    </web>
+  </module>
+  <module>
+    <web>
+      <web-uri>PresentationUser-user-0.1.war</web-uri>
+      <context-root>itro</context-root>
+    </web>
+  </module>
+  <library-directory>APP-INF/lib</library-directory>
+</application>

@@ -1,0 +1,38 @@
+configurations {
+	provided
+	extraLibs
+    compile.extendsFrom provided,extraLibs
+
+}
+
+dependencies { 
+    extraLibs 'com.squareup.retrofit2:retrofit:2.1.0'
+    extraLibs 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+    extraLibs 'com.squareup.retrofit2:converter-gson:2.0.2'
+    extraLibs 'com.squareup.retrofit2:converter-scalars:2.0.2'
+    provided group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.6.2'
+    provided group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.6.2'
+    
+    provided group: 'org.jboss.resteasy', name: 'resteasy-jaxrs', version: '3.1.4.Final'
+	provided group: 'org.jboss.resteasy', name: 'resteasy-jackson-provider', version: '3.1.4.Final'
+    
+    provided 'javax.ejb:ejb-api:3.0'
+    provided 'jboss:jboss-annotations-ejb3:4.2.2.GA'
+    provided project(':Persistenta')
+}
+
+
+jar {
+	manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Business',  
+        	       'Implementation-Version': version
+    //    	       ,'Class-Path': configurations.extraLibs.collect { "lib/$it.name" }.join(' ')
+    }
+    //baseName = project.name + '-all'
+  //  into('lib') {
+  //      println "includeInJar: " + configurations.extraLibs.collect { File file -> file }
+  //      from configurations.extraLibs
+  //  }
+}
+
+task buildBusinessJar(type: Jar)

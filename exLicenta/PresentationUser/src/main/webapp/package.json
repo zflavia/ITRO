@@ -1,0 +1,23 @@
+{
+  "name": "htiro-utilizator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-cookies": "^1.6.6",
+    "angular-route": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "angular-translate": "^2.15.2",
+    "angular-translate-handler-log": "^2.15.2",
+    "angular-translate-interpolation-messageformat": "^2.15.2",
+    "angular-translate-loader-partial": "^2.15.2",
+    "angular-translate-loader-static-files": "^2.15.2",
+    "bootstrap-datepicker": "^1.6.4"
+  }
+}

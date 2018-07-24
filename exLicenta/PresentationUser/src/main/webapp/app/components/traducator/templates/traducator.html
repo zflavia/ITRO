@@ -1,0 +1,177 @@
+
+<br>
+<br>
+<div class="traducator-photo" ng-if="traducator.foto && traducator.foto.length && (traducator.foto.toLowerCase() !== 'nu' || traducator.foto.toLowerCase() !== 'nu are' || traducator.foto.toLowerCase() != ' Nu are')">
+	<b style="vertical-align: bottom;">{{traducatorFoto}} : </b> <img src="images/traducator/{{traducator.foto}}"> <br>
+</div>
+<div class="traducator-nume" ng-if="(traducator.nume && traducator.nume.length)
+ || (traducator.prenume && traducator.prenume.length)
+ || (traducator.dataNastere && traducator.dataNastere.length)
+ || (traducator.localitateNastere.nume && traducator.localitateNastere.nume.length)
+ || (traducator.localitateNastere.judet.nume && traducator.localitateNastere.judet.nume.length)
+ || (traducator.localitateNastere.tara.nume && traducator.localitateNastere.tara.nume.length)
+ ||(traducator.dataDeces && traducator.dataDeces.length)
+ || (traducator.localitateDeces.nume && traducator.localitateDeces.nume.length)
+ || (traducator.localitateDeces.judet.nume && traducator.localitateDeces.judet.nume.length)
+ || (traducator.localitateDeces.tara.nume && traducator.localitateDeces.tara.nume.length)">
+
+	<b>{{traducatorNume}} :  </b> {{traducator.nume}} {{traducator.prenume}}({{traducator.dataNastere}}
+	{{traducator.localitateNastere.nume}}<span ng-if="traducator.localitateNastere.judet.nume && traducator.localitateNastere.judet.nume.length">,</span> {{traducator.localitateNastere.judet.nume}},
+	{{traducator.localitateNastere.tara.nume}}  <span ng-if="traducator.dataDeces && traducator.dataDeces.length">-</span> </span>	{{traducator.dataDeces}} {{traducator.localitateDeces.nume}}<span ng-if="traducator.localitateDeces.judet.nume && traducator.localitateDeces.judet.nume.length"><span ng-if="traducator.localitateDeces.judet.nume && traducator.localitateDeces.judet.nume.length">,</span></span> {{traducator.localitateDeces.judet.nume}}<span ng-if="traducator.localitateDeces.tara.nume && traducator.localitateDeces.tara.nume.length">
+	<span ng-if="traducator.localitateDeces.tara.nume && traducator.localitateDeces.tara.nume.length">,</span></span> {{traducator.localitateDeces.tara.nume}})
+	<br>
+
+</div>
+
+<div class="lista-pseudonime" ng-if="traducator.pseudonime && traducator.pseudonime.length">
+	<b>{{traducatorListaPseudonime}} : </b><br>
+	<ol>
+		<ol>
+			<li ng-repeat="pseudonim in traducator.pseudonime" ng-if="pseudonim.alias && pseudonim.alias.length">
+				{{pseudonim.alias}}
+			</li>
+		</ol>
+		</li>
+	</ol>
+</div>
+
+
+<div class = "aspecte-bibliografice" ng-if="traducator.aspecteBibliografice && traducator.aspecteBibliografice.length">
+	<p>
+		<b>{{traducatorAspecteBibliografice}}: </b> <div ng-bind-html="renderHtml(traducator.aspecteBibliografice)"></div><br>
+	</p>
+</div>
+<div class= "atributii-editoriale" ng-if = "traducator.atributiiContributiiEditoriale && traducator.atributiiContributiiEditoriale.length">
+	<p>
+		<b>{{traducatorAtributiiEditoriale}}: </b> <div ng-bind-html="renderHtml(traducator.atributiiContributiiEditoriale)"></div>
+	</p>
+</div>
+<div class="activitate-traducator" ng-if = "traducator.activitateTraducator && traducator.activitateTraducator.length">
+	<p>
+		<b>{{traducatorActivitate}}: </b> <div ng-bind-html="renderHtml(traducator.activitateTraducator)"></div>
+	</p>
+</div>
+<div class= "lista-traduceri "ng-if="(traducator.traduceriManuscrise && traducator.traduceriManuscrise.length) || (traducator.editiiVechi && traducator.editiiVechi.length) || (traducator.traduceriFaraIndicatii && traducator.traduceriFaraIndicatii.length) || (traducator.editiiModerne && traducator.editiiModerne.length) || (traducator.dictionare && traducator.dictionare.length) || (traducator.manuale && traducator.manuale.length)">
+	<p>
+		<b>{{traducatorListaTraduceri}}: </b><br>
+	<ol>
+		<li ng-if="traducator.traduceriManuscrise && traducator.traduceriManuscrise.length">
+			<div>
+				<b>{{traducatorTraduceriManuscrise}}:</b>
+				<ol>
+					<li ng-repeat="traducere in traducator.traduceriManuscrise"> ({{traducere.id}})
+						<span ng-repeat="autor in traducere.autori"> {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}},</span> <span ng-if="traducere.titlu && traducere.titlu.length">&minus;</span>
+						<i>{{traducere.titlu}}</i> <span ng-if="traducere.an &&traducere.an.length">&minus;</span> {{traducere.an}} <span ng-bind-html="renderHtml(traducere.detalii)" ></span>
+						<span ng-if="traducere.limbaTrad && traducere.limbaTrad.length">
+						   (<span ng-bind-html="renderHtml(traducere.limbaTrad)" ></span>)
+					  </span>
+
+					</li>
+				</ol>
+			</div>
+		</li>
+		<li ng-if="traducator.editiiVechi && traducator.editiiVechi.length">
+			<div>
+				<b>{{traducatorEditiiVechi}}: </b>
+				<ol>
+					<li ng-repeat="traducere in traducator.editiiVechi"> ({{traducere.id}})
+						<span ng-repeat="autor in traducere.autori"> {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}},</span> <span ng-if="traducere.titlu && traducere.titlu.length">&minus;</span>
+						<i>{{traducere.titlu}}</i>  <span ng-if="traducere.an &&traducere.an.length">&minus;</span>  {{traducere.an}} <span ng-bind-html="renderHtml(traducere.detalii)" ></span>
+						<span ng-if="traducere.limbaTrad && traducere.limbaTrad.length">
+						   (<span ng-bind-html="renderHtml(traducere.limbaTrad)" ></span>)
+					  </span>
+					</li>
+				</ol>
+			</div>
+		</li>
+		<li ng-if="traducator.traduceriFaraIndicatii && traducator.traduceriFaraIndicatii.length">
+			<div>
+				<b>{{traducatorTraduceriFaraIndicatii}}: </b>
+				<ol>
+					<li ng-repeat="traducere in traducator.traduceriFaraIndicatii"> ({{traducere.id}})
+						<span ng-repeat="autor in traducere.autori"> {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}},</span> <span ng-if="traducere.titlu && traducere.titlu.length">&minus;</span>
+						<i>{{traducere.titlu}}</i> <span ng-if="traducere.an &&traducere.an.length">&minus;</span> {{traducere.an}} <span ng-bind-html="renderHtml(traducere.detalii)" ></span>
+						<span ng-if="traducere.limbaTrad && traducere.limbaTrad.length">
+						   (<span ng-bind-html="renderHtml(traducere.limbaTrad)" ></span>)
+					  </span>
+					</li>
+				</ol>
+			</div>
+		</li>
+		<li ng-if="traducator.editiiModerne && traducator.editiiModerne.length">
+			<div>
+				<b>{{traducatorEditiiModerne}}: </b>
+				<ol>
+					<li ng-repeat="traducere in traducator.editiiModerne"> ({{traducere.id}})
+						<span ng-repeat="autor in traducere.autori"> {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}},</span> <span ng-if="traducere.titlu && traducere.titlu.length">&minus;</span>
+						<i>{{traducere.titlu}}</i> <span ng-if="traducere.an &&traducere.an.length">&minus;</span> {{traducere.an}} <span ng-bind-html="renderHtml(traducere.detalii)" ></span>
+						<span ng-if="traducere.limbaTrad && traducere.limbaTrad.length">
+						   (<span ng-bind-html="renderHtml(traducere.limbaTrad)" ></span>)
+					  </span>
+					</li>
+				</ol>
+			</div>
+		</li>
+	</ol>
+
+	<div class="traducator-dictionare" ng-if="traducator.dictionare && traducator.dictionare.length">
+		<p>
+			<b>{{traducatorDictionare}}: </b>
+		<ol>
+			<li ng-repeat="traducere in traducator.dictionare"> ({{traducere.id}})
+				<span ng-repeat="autor in traducere.autori"> {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}},</span> <span ng-if="traducere.titlu && traducere.titlu.length">&minus;</span>
+				<i>{{traducere.titlu}}</i> <span ng-if="traducere.an &&traducere.an.length">&minus;</span> {{traducere.an}} <span ng-bind-html="renderHtml(traducere.detalii)" ></span>
+				<span ng-if="traducere.limbaTrad && traducere.limbaTrad.length">
+					(<span ng-bind-html="renderHtml(traducere.limbaTrad)" ></span>)
+				</span>
+			</li>
+		</ol>
+
+	</div>
+	<div class="traducator-manuale" ng-if="traducator.manuale && traducator.manuale.length">
+		<b>{{traducatorManuale}}: </b>
+		<ol>
+			<li ng-repeat="traducere in traducator.manuale"> ({{traducere.id}})
+				<span ng-repeat="autor in traducere.autori"> {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}},</span> <span ng-if="traducere.titlu && traducere.titlu.length">&minus;</span>
+				<i>{{traducere.titlu}}</i> <span ng-if="traducere.an &&traducere.an.length">&minus;</span> {{traducere.an}} <span ng-bind-html="renderHtml(traducere.detalii)" ></span>
+				<span ng-if="traducere.limbaTrad && traducere.limbaTrad.length">
+					(<span ng-bind-html="renderHtml(traducere.limbaTrad)" ></span>)
+				</span>
+			</li>
+		</ol>
+	</div>
+</div>
+<div class = "bibliografie" ng-if="traducator.bibliografie && traducator.bibliografie.length">
+	<b>{{traducatorBibliografie}}: </b>
+	<ol>
+		<li ng-repeat="b in traducator.bibliografie"> ({{b.id}})
+			<span ng-repeat="autor in b.autori"> {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}}<span ng-if="b.autori && b.autori.length -1 !== index">, </span> </span> <span ng-if="b.titlu && b.titlu.length">&minus;</span>
+			<i>{{b.titlu}}</i> <span ng-if="b.an && b.an.length">&minus;</span> {{b.an}} {{b.detalii}} <a target="_blank" href="{{b.url}}">{{b.url}}</a>
+		</li>
+	</ol>
+</div>
+<div class="bibliografie-activitate-traducere" ng-if="traducator.bibliografieBPAT && traducator.bibliografieBPAT.length">
+	<b>{{traducatorBibliografieActivitate}}:</b>
+	<ol>
+		<li ng-repeat="b in traducator.bibliografieBPAT"> ({{b.id}})
+			<span ng-repeat="autor in b.autori">  {{autor.titlu}} {{autor.nume}} {{autor.prenume}} {{autor.detalii}}
+			<span ng-if="b.autori && b.autori.length -1 !== index">, </span> </span> <span ng-if="b.titlu && b.titlu.length">&minus;</span>
+			<i>{{b.titlu}}</i> <span ng-if="b.an && b.an.length">&minus;</span>  {{b.an}} {{b.detalii}} <a target="_blank" href="{{b.url}}">{{b.url}}</a>
+		</li>
+	</ol>
+
+</div>
+<div class="prezente-in-BDD" ng-if="traducator.vizibilitateBDD && traducator.vizibilitateBDD.length" >
+	<b>{{traducatorPrezenteBDD}}: </b>
+	<ol>
+		<li ng-repeat="bdd in traducator.vizibilitateBDD"> <span ng-if="b.id && b.id.length">({{b.id}})</span>
+			<span ng-bind-html="renderHtml(bdd.detalii)" ></span> <a  target="_blank" href="{{bdd.url}}">{{bdd.url}}</a>
+		</li>
+	</ol>
+
+
+</div>
+
+<b>{{traducatorPrelucrat}}: </b> {{traducator.prelucratDe.alias}} <br>
+<b>{{traducatorPreluat}}: </b>  {{traducator.preluatDe.alias}} <br>
+

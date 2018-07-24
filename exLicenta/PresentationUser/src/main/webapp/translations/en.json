@@ -1,0 +1,100 @@
+{
+  "hello": "Hello",
+  "button_lang_ro": "Romanian",
+  "button_lang_fr": "French",
+  "button_lang_en": "English",
+  "welcome_message": "Welcome to the AngularJS multilingual site",
+  "g": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "reset": "Reset",
+    "actions": "Actions",
+    "search": "Search",
+    "add": "Add",
+    "browse": "Browse",
+    "close": "Proche",
+    "letters": "Letters"
+  },
+  "menu": {
+    "user_profile" :"User Profile",
+    "settings" :"Settings",
+    "logout" :"Logout",
+    "user": "User",
+    "language": "Language",
+    "country": "Country",
+    "county": "County",
+    "locality": "Locality",
+    "translator": "Translator",
+    "medalion": "Medalion",
+    "contact": "Contact"
+  },
+  "users": {
+    "user": "User",
+    "insert_user": "Insert user",
+    "show_users": "Show users",
+    "actions": "Actions",
+    "username": "User name",
+    "email": "Email",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "password": "Password",
+    "alias": "Alias"
+  },
+  "language": {
+    "language": "Language"
+  },
+  "country": {
+    "insert_country": "Insert country",
+    "edit_country": "Edit country",
+    "show_countries": "Show countries",
+    "country_name": "Country Name",
+    "country": "Country"
+  },
+  "county": {
+    "insert_county": "Insert county",
+    "edit_county": "Edit county",
+    "show_counties": "Show counties",
+    "county_name": "County Name",
+    "county": "County"
+  },
+  "locality": {
+    "insert_locality": "Insert locality",
+    "edit_locality": "Edit locality",
+    "show_localities": "Show localities",
+    "locality_name": "Locality Name",
+    "locality": "Locality"
+  },
+  "translators": {
+    "translators": "Translators",
+    "insert_translator": "Insert translator",
+    "edit_translator": "Edit translator",
+    "show_translators": "Show translators",
+    "insert_photo": "Insert Photo",
+    "name": "Translator Name",
+    "birthDate": "Birth date",
+    "deathDate": "Death date",
+    "bornPlace": "Born place",
+    "deathPlace": "Death place",
+    "day": "Day",
+    "month": "Month",
+    "alias": "Alias",
+    "bibliographicalAspects": "Biographical aspects",
+    "duties": "Duties / Editorial contributions, social",
+    "activity": "Translator activity",
+    "translations_list": "List of Translations",
+    "bibliography": "Bibliography",
+    "presenceInBDD": "Present in BDD",
+    "author": "Author",
+    "title": "Title",
+    "year": "Year",
+    "details": "Details",
+    "type": "Type",
+    "search": "Search",
+    "link": "Link"
+  },
+  "contact": {
+    "address": "Address"
+  }
+
+}

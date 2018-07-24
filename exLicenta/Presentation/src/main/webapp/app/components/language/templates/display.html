@@ -1,0 +1,37 @@
+<h2>{{message}}</h2>
+<div class="tab-content">
+    
+        <a ui-sref="^.insert">
+            <button class="btn btn-primary">
+                Insert Language
+            </button>
+        </a>
+    
+    <div id="show-users" class="tab-pane fade in active">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Show Language</h3>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control filter-input" ng-model="limbaFilter" placeholder="language...">
+            </div>
+        </div>
+        <table class="table table-r">
+            <th>Name Language</th>
+            <th>Actions</th>
+            <tr ng-repeat="language in languages | filter: limbaFilter | orderBy: 'language.nume'">
+                <td>{{language.nume}}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary"
+                            ng-click="editLanguage(language.id, $index)">
+                        <i class="glyphicon glyphicon-edit"> </i> Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger"
+                            ng-click="deleteLanguage(language.id, $index)" >
+                        <i class="glyphicon glyphicon-remove"> </i> Delete
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
